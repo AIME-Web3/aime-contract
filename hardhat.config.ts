@@ -8,6 +8,7 @@ import type { NetworkUserConfig } from "hardhat/types";
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 const mnemonic: string = vars.get("MNEMONIC_");
+const ETH_SK: string = vars.get("ETH_SK");
 const infuraApiKey: string = vars.get("INFURA_API_KEY");
 
 const chainIds = {
@@ -96,6 +97,37 @@ const config: HardhatUserConfig = {
     sepolia: getChainConfig("sepolia"),
     // 'bsc-testnet': getChainConfig("bsc-testnet"),
     // 'merlin-testnet': getChainConfig("merlin-testnet"),
+    polygon: {
+      url: "https://rpc.cardona.zkevm-rpc.com",
+      chainId: 2442,
+      accounts: [ETH_SK as unknown as string],
+    },
+    linea: {
+      url: "https://rpc.goerli.linea.build",
+      chainId: 59140,
+      accounts: [ETH_SK as unknown as string],
+    },
+    scroll: {
+      url: "https://scroll-testnet-public.unifra.io",
+      chainId: 534351,
+      accounts: [ETH_SK as unknown as string],
+    },
+    thundercore: {
+      // TODO:
+      url: "https://testnet-rpc.thundercore.com",
+      chainId: 18,
+      accounts: [ETH_SK as unknown as string],
+      // gasPrice: 5000000000000,
+    },
+    op: {
+      url: 'https://optimism-sepolia.infura.io/v3/709f66312ff74761a30d551b6e9c5810',
+      accounts: [ETH_SK as unknown as string],
+    },
+    // sepolia: {
+    //   url: "https://sepolia.infura.io/v3/709f66312ff74761a30d551b6e9c5810",
+    //   chainId: 11155111,
+    //   accounts: [ETH_SK as unknown as string],
+    // },
   },
   paths: {
     artifacts: "./artifacts",
@@ -120,7 +152,7 @@ const config: HardhatUserConfig = {
     },
   },
   typechain: {
-    outDir: "types",
+    outDir: "typechain-types",
     target: "ethers-v6",
   },
   // defender: {

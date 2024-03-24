@@ -1,0 +1,27 @@
+{
+  "project": "AIME",
+  "sepolia": {
+    "verifierAddress": "0x8210938F6d7a2E3F1D343FDbd409e6b9e21aE770",
+    "aimeAddress": "0xCE16905BdD7fF8fBEA3695edaC80e1D48E2bE75f"
+  },
+  "polygon": {
+    "verifierAddress": "0x98757A83811aBFdCB62744d3BA0c50Ac613A8Ce8",
+    "aimeAddress": "0x13d0BE100b566Ed2a580dEeef2c21fFaC079f8BA"
+  },
+  "thundercore": {
+    "verifierAddress": "0x13d0BE100b566Ed2a580dEeef2c21fFaC079f8BA",
+    "aimeAddress": "0xD0b7A4977279e0E4F581fC3AA0d205784C47ad22"
+  },
+  "linea": {
+    "verifierAddress": "0x13d0BE100b566Ed2a580dEeef2c21fFaC079f8BA",
+    "aimeAddress": "0xD0b7A4977279e0E4F581fC3AA0d205784C47ad22"
+  },
+  "op": {
+    "verifierAddress": "0x71629Ba34e5317c48f07A22d51f79d742540B9A3",
+    "aimeAddress": "0xA6Ac703BB53aDfB14Cc91C7b6bC7f21d45b7f974"
+  },
+  "scroll": {
+    "verifierAddress": "0x82B98a0C2e35B9a7a3723115dEd8c49F913e1d36",
+    "aimeAddress": "0x134ed4657f0e6be14D7d24A4602f7bD1efD406d0"
+  }
+}
